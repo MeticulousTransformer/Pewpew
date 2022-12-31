@@ -1,0 +1,138 @@
+:root {
+    --primary-color: rgb(255, 153, 0);
+    --bullet-color: rgb(235, 0, 0);
+    --title-color: rgb(211, 137, 0);
+    /* --background-color: linear (rgb(34, 27, 27), rgb(134, 0, 0)); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+/* main container header ------------------ */
+
+.main-container {
+    width: 700px;
+    height: 500px;
+    background-image: url();
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: 120px;
+    outline: 5px solid rgb(0, 0, 0);
+    color: var(--title-color);
+    font-family: 'VT323', monospace;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 60px 10px rgb(0, 231, 235);
+    /* animation-name: containershadow;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; */
+    transition: 1s;
+}
+
+/* 
+@keyframes containershadow {
+    0% {
+        box-shadow: 0px 0px 60px rgb(0, 231, 235);
+    }
+
+    50%{
+        box-shadow: 0px 0px 30px rgb(0, 231, 235);
+    }
+
+    100%{
+        box-shadow: 0px 0px 60px rgb(0, 231, 235);
+    }
+} */
+
+/* titles and information ------------ */
+
+.header-titles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.header-titles h2 {
+    font-size: xx-large;
+}
+
+.health-bar img {
+    width: 40px;
+    height: 40px;
+}
+
+.health-bar {
+    margin-right: 110px;
+}
+
+.setting-button {
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.setting-button:hover {
+    animation-name: buttonanimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    color: aqua;
+    text-shadow: 0px 0px 30px aqua;
+}
+
+/* button animation-------- */
+
+
+@keyframes buttonanimation {
+    0% {
+        transform: rotateZ(360deg);
+        transition: 0.6s;
+    }
+}
+
+#rocket {
+    width: 120px;
+    top: 500px;
+    left: 900px;
+    position: absolute;
+    margin: auto;
+
+    /* animation-name: Gadaxra;
+    animation-duration: 5s;
+    animation-delay: 0s; */
+
+
+}
+
+/* @keyframes Gadaxra {
+    from {
+        transform: skewY(50deg);
+    }
+
+    to {
+        transform: skewY(-50deg);
+    }
+} */
+
+.div {
+    height: 200px;
+    width: 400px;
+    background: green;
+}
